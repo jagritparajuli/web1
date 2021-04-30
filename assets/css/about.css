@@ -1,0 +1,18 @@
+.container {
+  width: 100vw;
+  color: #fff;
+  background: linear-gradient(to right, #6a82fbe3, #fc5c7ce3);
+}
+
+header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.356);
+}
+
+.ribbon {
+  padding: 50px;
+  /* background: linear-gradient(to right, #6a82fbe3, #fc5c7ce3); */
+}
+
+.content {
+  padding: 50px;
+}

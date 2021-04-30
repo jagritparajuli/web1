@@ -7,7 +7,7 @@ const id = window.localStorage.getItem("id");
 
 async function getData() {
     const response = await fetch(
-        `http://www.omdbapi.com/?apikey=8a48da82&i=${id}&plot=full`
+        `https://www.omdbapi.com/?apikey=8a48da82&i=${id}&plot=full`
       );
     const item = await response.json();
     poster.innerHTML = `<img src="${item.Poster}">`;

@@ -160,3 +160,13 @@
 .checkout:hover {
   background: linear-gradient(to right, #6a82fba2, #fc5c7da2);
 }
+
+@media (max-width: 767px) {
+  .banner {
+    flex-direction: column;
+  }
+  .booking {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

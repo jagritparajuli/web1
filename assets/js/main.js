@@ -21,7 +21,7 @@ function getNowShowing(){
         if(movie.state=='ns'){
         try {
             const response = await fetch(
-              `http://www.omdbapi.com/?apikey=8a48da82&i=${movie.imdb}`
+              `https://www.omdbapi.com/?apikey=8a48da82&i=${movie.imdb}`
             );
             const item = await response.json();
             var card = document.createElement('div');

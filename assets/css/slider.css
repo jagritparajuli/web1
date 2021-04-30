@@ -1,72 +1,73 @@
-.slider{
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    align-items: center;
+.slider {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.slider a {
+  color: #000;
 }
 
-.slider-buttons{
-    position: absolute;
-    width: 100%;
-    top: 50;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.slider-buttons {
+  position: absolute;
+  width: 100%;
+  top: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.slider-buttons button{
-    background-color: rgba(61, 61, 61, 0.295);
-    border: 0;
-    font-size: 2em;
-    color: rgba(255, 255, 255, 0.534);
-    padding: 5px;
+.slider-buttons button {
+  background-color: rgba(61, 61, 61, 0.295);
+  border: 0;
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.534);
+  padding: 5px;
 }
 
-.slider-buttons button:hover{
-    background-color: rgba(255, 255, 255, 0.404);
-    color: rgba(0, 0, 0, 0.616);
+.slider-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.404);
+  color: rgba(0, 0, 0, 0.616);
 }
 
-.slider-info{
-    background-color: rgba(0, 0, 0, 0.514);
-    color: #fff;
-    padding: 20px 40px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+.slider-info {
+  background-color: rgba(0, 0, 0, 0.514);
+  color: #fff;
+  padding: 20px 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
-.slider-info button{
-    margin-top: 10px;
-    margin-right: 10px;
+.slider-info button {
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
-.slider_tag{
-    background-color: rgb(253, 207, 2);
-    width: fit-content;
-    padding: 3px 5px;
-    color: #000;
+.slider_tag {
+  background-color: rgb(253, 207, 2);
+  width: fit-content;
+  padding: 3px 5px;
+  color: #000;
 }
-
-
 
 /* slider media queries */
 
-@media (max-width: 700px){
-    .slider{
-        overflow: hidden;
-        background-size:auto inherit;
-    }
-     .slider-info{
-         width: 100%;
-         display: flex;
-         flex-direction: column;
-     }
+@media (max-width: 700px) {
+  .slider {
+    overflow: hidden;
+    background-size: auto inherit;
+  }
+  .slider-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-     .slider-info button{
-         min-width: 150px;
-     }
+  .slider-info button {
+    min-width: 150px;
+  }
 }

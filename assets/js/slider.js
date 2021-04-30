@@ -5,6 +5,7 @@ const slider = document.getElementById('slider');
 const slider_info = document.getElementById('slider-info');
 
 var slider_data = ["Shree","Nobody","Raya and the Last Dragon"];
+var trailer = ["https://www.youtube.com/watch?v=TSkxZCdpJbU","https://www.youtube.com/watch?v=wZti8QKBWPo", "https://www.youtube.com/watch?v=1VIZ89FEjYI"]
 
 var i = 0;
 var timer;
@@ -14,8 +15,7 @@ function loadSlider() {
     slider_info.innerHTML=` 
     <h1>${slider_data[i]}</h1>
     <h4 class = "slider_tag">Now Showing</h4>
-    <button><i class = "fas fa-ticket-alt"></i>Book Ticket</button>
-    <button><i class = "fas fa-play-circle"></i>Watch Trailer</button>
+    <a class="btn" href = "${trailer[i]}" target="_blank"><i class = "fas fa-play-circle"></i>Watch Trailer</a>
     `;
     i < slider_data.length - 1 ? i++ : i = 0;
     timer = setTimeout("loadSlider()",5000);

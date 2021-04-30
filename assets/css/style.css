@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  /* min-height: 100vh; */
+  background: url("../images/background1.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.cover {
+  height: 100vh;
+}
+
+.greeting {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 50px;
+  overflow: hidden;
+}
+
+.greeting h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+.greeting img {
+  width: 45vw;
+}
+
+.featured {
+  padding: 80px 50px 0 50px;
+}
+
+.featured h1 {
+  color: #fff;
+  width: fit-content;
+  padding: 5px 10px;
+  padding-right: 200px;
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+}
+.now-showing-container,
+.coming-soon-container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 50px;
+}
+
+.now-showing-title,
+.coming-soon-title {
+  background-image: url("../images/backdrop.jpg");
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  border-radius: 20px;
+  transition: background-size 0.5s ease;
+}
+
+.now-showing-title:hover,
+.coming-soon-title:hover {
+  background-size: 110%;
+}
+
+.cntr {
+  background: linear-gradient(to right, #6a82fbe3, #fc5c7ce3);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 50px;
+  font-size: 2em;
+}
+
+.now-showing,
+.coming-soon {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.025);
+  border-radius: 20px;
+}
+
+.card {
+  width: 230px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  margin: 15px;
+}
+.card-poster {
+  height: 300px;
+  width: 100%;
+  background-color: #fc5c7d;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.card-poster img {
+  width: 250px;
+}
+
+.card-info {
+  background: linear-gradient(to right, #6a82fb, #fc5c7c);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/* .................... */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+form {
+  width: 100%;
+}
+
+button {
+  padding: 10px 12px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  font-size: 1.3em;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.63);
+}

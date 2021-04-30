@@ -1,0 +1,53 @@
+.screen {
+  background-color: rgb(255, 255, 255);
+  height: 200px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.seat-guide {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.seat-guide > div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.seat {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.seat:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.selected {
+  background: linear-gradient(to right, #6a82fb, #fc5c7d);
+}
+
+.occupied {
+  background-color: #fc5c7d;
+}
+
+.na {
+  background-color: rgba(209, 209, 209, 0.411);
+  cursor: not-allowed;
+}
+
+.seat-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
